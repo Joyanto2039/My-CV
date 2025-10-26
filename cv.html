@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+    <div id="cv">
+  <div class="container">
+    <div class="buttons">
+    <button id="darkModeToggle"> 🌞 Light Mode </button>
+    <button id="downloadBtn">Download CV as PDF</button>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+        </div>
+    <div class="header">
+        <div class="img-area">
+            <img src="joy.jpg" alt="image" height="214px">
+        </div>
+        <h1>Joyanto Debnath</h1>
+        <h3>Aspiring Full-Stack  Developer</h3>
+    </div>
+    <div class="main">
+        <div class="left">
+            <h2>Personal Information</h2>
+            <p><strong>Name : </strong>Joyanto Debnath</p>
+            <p><strong>Fathers Name : </strong>Amar Chandra Debnath</p>
+            <p><strong>Mothers Name : </strong>Karuna Debnath</p>
+            <p><strong>Age : </strong><span id="age"></span></p>
+           <p><strong>Phone : </strong><span id="phone">01790279343</span> 
+            <button2 onclick="copyText('phone')">Copy</button></p>
+            <p><strong>G-mail : </strong><span id="email">jdjoyanto2003@gmail.com</span> 
+            <button2 onclick="copyText('email')">Copy</button></p>
+            <h2>Skills</h2>
+            <div id="skills-progress"></div>
+            <h2>Education</h2>
+            <table border="blue">
+                <tr>
+                    <th>Degree/Exam</th>
+                    <th>Institution</th>
+                    <th>Board/University</th>
+                    <th>Passing Year</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Betaga United Model Secondary School</td>
+                    <td>Jashore</td>
+                    <td>2019</td>
+                    <td>GPA-5.00</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Govt. Sunderban Adarsha College,Khulna</td>
+                    <td>Jashore</td>
+                    <td>2021</td>
+                    <td>GPA-5.00</td>
+                </tr>
+                <tr>
+                    <td>BSc. in CSE(Running)</td>
+                    <td>North Western University , Khulna</td>
+                    <td>UGC Approved Private University</td>
+                    <td>2027(Expected)</td>
+                    <td>CGPA-3.62(Current)</td>
+                </tr>
+            </table>
+    </div>
+        <div class="right">
+            <h2>Work Experiences</h2>
+            <h3>Academic Projects</h3>
+            <ul>
+                <li>Real-Time GPS Tracker using ESP-32 (Currently Working).</li>
+                <li>Web Based Employee Management System (Currently Working).</li>
+                <li>Perticipated in Programming Contest organized by Comptron and NWU.</li>
+            </ul>
+            <h2>Achievements</h2>
+            <p>I successfully completed my Secondary School Certificate (SSC) and Higher Secondary Certificate (HSC) with commendable results. During my studies, I have actively participated in university-level programming contests, which helped me strengthen my problem-solving skills and exposed me to competitive coding environments. I have also been recognized among my peers for dedication and teamwork in group projects, demonstrating both technical ability and collaborative spirit. Beyond academics, I am committed to continuous self-learning and have started exploring Web Development, reflecting my aspiration to grow into a skilled computer professional.</p>
+             <h2>Interests</h2>
+            <ul>
+                <li>Mobile and Web App Development.</li>
+                <li>Perticipating in coding challenges and hackathons.</li>
+                <li>Gardening and caring for plants.</li>
+            </ul>
+            <h2>Declaration</h2>
+            <p>I hereby declare that all the information here is true to the best of my knowledge</p>
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="https://github.com/Joyanto2039">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/joyanto-debnath-743a02348/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B3YmCJtlTQGymAWz5WkmpQg%3D%3D">Linkedin</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>  
+  </div>
+  <script src="cv.js"></script>
+</body>
+</html>
